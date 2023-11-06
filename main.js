@@ -38,13 +38,64 @@
 //Usa JavaScript per aggiungere un nuovo elemento di lista alla fine della lista usando appendChild.
 //Poi usa insertBefore per aggiungere un elemento di lista all'inizio della lista.
 
-window.addEventListener("load", () => {
-    const container = document.getElementById("lista");
-    const firstLi = container.querySelector("li");
-    const ultimoLi = document.createElement("li");
-    const primoLi = document.createElement("li");
-    ultimoLi.innerText = "pomodoro*ultimo";
-    primoLi.innerText = "mela*primo";
-    container.appendChild(ultimoLi);
-    container.insertBefore(primoLi, firstLi);
-});
+// window.addEventListener("load", () => {
+//     const container = document.getElementById("lista");
+//     const firstLi = container.querySelector("li");
+//     const ultimoLi = document.createElement("li");
+//     const primoLi = document.createElement("li");
+//     ultimoLi.innerText = "pomodoro*ultimo";
+//     primoLi.innerText = "mela*primo";
+//     container.appendChild(ultimoLi);
+//     container.insertBefore(primoLi, firstLi);
+// });
+
+//Esercizio 5: Crea un elemento div con class 'blu'.
+//Usa JavaScript per controllare al click se il div ha la classe 'blu' usando classList.includes().
+//Poi usa classList.add() per aggiungere una classe 'rosso' e classList.remove() per rimuovere la classe 'blu'.
+// window.addEventListener("click", () => {
+//     const divBlue = document.querySelector(".blu");
+//     divBlue.style.color = "blue";
+//     let verificaDiv = divBlue.classList.contains("blu");
+//     if (verificaDiv) {
+//         console.log("si, blu è una classe di div");
+//     } else {
+//         console.log("no, blu non è una classe di div");
+//     }
+
+//     divBlue.classList.add("rosso");
+//     divBlue.classList.remove("blu");
+//     console.log(divBlue);
+// });
+
+//Esercizio 6: Crea un pulsante in HTML.
+//Usa JavaScript per impostare un attributo 'disabled' sul pulsante usando setAttribute().
+
+// window.addEventListener("load", () => {
+//     const bottone = document.getElementById("btn");
+//     bottone.setAttribute("class", "disabled");
+//     console.log(bottone);
+// });
+
+//Esercizio 7: Crea un elemento div.
+//Aggiungi un evento onmouseover che cambia il colore del div.
+//Aggiungi un evento onmouseout che cambia il colore del div indietro.
+//Aggiungi un evento click che stampa un messaggio in console.
+
+// window.addEventListener("onmouseover", () => {
+//     const div = document.getElementById("container");
+//     div.style.color = "red";
+// });
+
+const divRosso = () => {
+    const div = document.getElementById("container");
+    div.style.color = "red";
+};
+const divBackToNormal = () => {
+    const div = document.getElementById("container");
+    div.style.color = "black";
+};
+
+const handleClick = () => {
+    const div = document.getElementById("container");
+    console.log("hello world");
+};
